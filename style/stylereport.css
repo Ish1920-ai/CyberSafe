@@ -60,6 +60,19 @@ body {
         display: flex;
         gap: 15px;
     }
+    .login button {
+        border: none;
+        border-radius: 20px;
+        width: 100px;
+        height: 43px;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(205, 190, 170);
+        background: linear-gradient(135deg, rgb(42, 42, 83), aqua);
+        background-clip: border-box;
+        cursor: pointer;
+    }
     .form h1 {
         text-align: center;
         font-size: 50px;

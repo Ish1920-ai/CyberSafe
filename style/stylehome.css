@@ -61,10 +61,15 @@ body {
         gap: 15px;
     }
     button {
+        border: none;
+        border-radius: 20px;
+        width: 100px;
+        padding: 10px;
         font-size: 20px;
         font-weight: bold;
         color: rgb(205, 190, 170);
-        background-color: rgb(12, 9, 40);
+        background: linear-gradient(135deg, rgb(42, 42, 83), aqua);
+        background-clip: border-box;
         cursor: pointer;
     }
     .head {
