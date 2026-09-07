@@ -50,8 +50,6 @@ body {
     }
     a:hover {
         color: antiquewhite;
-        transform: translateY(-5px);
-        font-size: 30px;
     }
     ul {
         font-size: larger;
@@ -115,7 +113,7 @@ body {
     }
     .contact-form button {
         background: linear-gradient(135deg, aqua, lavender);
-        -webkit-background-clip: border-box;
+        background-clip: border-box;
         border: 1px solid;
         border-radius: 20px;
         font-size: 20px;

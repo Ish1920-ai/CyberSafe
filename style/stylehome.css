@@ -46,10 +46,8 @@ body {
         color: rgb(185, 178, 169);
         font-size: 25px;
     }
-    a:hover {
+    a:hover {        
         color: antiquewhite;
-        transform: translateY(-5px);
-        font-size: 30px;
     }
     ul {
         font-size: larger;
@@ -76,7 +74,7 @@ body {
     }
     .gradient {
         background: linear-gradient(135deg, aqua,rgb(215, 144, 215));
-        -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
     .cards {

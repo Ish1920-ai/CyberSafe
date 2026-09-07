@@ -48,8 +48,6 @@ body {
     }
     a:hover {
         color: antiquewhite;
-        transform: translateY(-5px);
-        font-size: 30px;
     }
     ul {
         font-size: larger;
@@ -118,7 +116,7 @@ body {
     }
     button {
         background: linear-gradient(135deg, aqua, lavender);
-        -webkit-background-clip: border-box;
+        background-clip: border-box;
         color: rgb(26, 25, 23);
         border-radius: 20px;
         height: 50px;

@@ -1,0 +1,138 @@
+body {
+    background-image: url(../boxbg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    main { 
+        border: 20px rgb(205, 221, 205);
+        border-radius: 30px;
+        display: block;
+        align-items: center;
+        margin: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 1);
+        justify-content: center;
+        transform: translateY(-3px);
+        background-color: rgba(46, 39, 88, 0.8);
+        width: 600px;
+        height: fit-content;
+        h1 {
+            color: rgb(108, 108, 193);
+            text-align: center;
+        }
+        h2 {
+            color: rgb(165, 147, 209);
+            text-align: center;
+        }
+        form {
+            label {
+                color: rgb(194, 129, 222);
+                font-size: 20px;
+                font-weight: bolder;
+            }
+            input[type=text] {
+                background-color: rgb(90, 67, 125);
+                padding: 10px;
+                border: none rgb(211, 207, 249);
+                border-radius: 20px;
+                box-sizing: border-box;
+                margin-top: 5px;
+                margin-right: 20px;
+                width: 100%;
+                font-size: large;
+                font-weight: bold;
+            }
+            input[type=password] {
+                background-color: rgb(90, 67, 125);
+                padding: 10px;
+                padding-right: 60px;
+                border: none rgb(211, 207, 249);
+                border-radius: 20px;
+                box-sizing: border-box;
+                margin-top: 5px;
+                margin-right: 20px;
+                width: 100%;
+                font-size: large;
+                font-weight: bold;
+            }
+            input:hover {
+                background-color: rgb(208, 206, 234);
+                transform: translateY(-3px);
+                box-shadow: 0 10px 25px rgba(165, 107, 174, 0.35);
+            }
+            input:focus {
+                background-color: rgb(210, 181, 218);
+                box-shadow: 15px plum;
+            }
+            .eye {
+                position: absolute;
+                right: 10px;
+                top: 41%;
+                margin: 40px;
+                cursor: pointer;
+                border: none;
+                background: transparent;
+            }
+            .btn {
+                width: 100%;
+                padding: 10px;
+                font-size: larger;
+                color: rgb(219, 181, 224);
+                background-color: rgb(87, 42, 88);
+                transition: height 0s;
+                border-radius: 20px;
+                border: none;
+            }
+            .btn:hover {
+                background-color: rgb(125, 62, 115,1);
+                transition: height;
+                transform: translateY(-3px);
+                box-shadow: 0 10px 25px rgba(197, 96, 147, 0.35);
+            }
+            nav {
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                gap: 15px;
+                .icon img {
+                    position: relative;
+                    width: 40px;
+                    height: 40px;
+                    transition: height 0s width 0s;
+                }
+                .icon {
+                    position: relative;
+                    display: inline-block;
+                }
+                .tooltip {
+                    position: absolute;
+                    display: inline-block;
+                    background-color: rgb(8, 8, 22);
+                    color: antiquewhite;
+                    top: 97%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    padding: 0;
+                    margin: 0;
+                    visibility: hidden;
+                }
+            }
+            .icon img:hover {
+                    height: 50px;
+                    width: 50px;
+            }
+            .icon:hover .tooltip {
+                visibility: visible;
+            }
+            p {
+                text-align: center;
+                color: rgb(179, 208, 233);
+            }
+            }
+        }
+}
