@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+html {
+        scroll-behavior: smooth;
+    }
 body {
     background-color: rgb(13, 13, 47);
     color: antiquewhite;
@@ -8,27 +11,27 @@ body {
     line-height: 1.6;
     .blur1 {
         position: absolute;
-        width: 300px;
-        height: 300px;
+        width: 500px;
+        height: 500px;
         border-radius: 50%;
         z-index: -1;
         opacity: 0.4;
         top: 0; 
-        left: -50px; 
+        left: 0; 
         background: aqua;
         filter: blur(120px);
     } 
     .blur2 {
         position: absolute;
-        width: 300px;
-        height: 300px;
+        width: 500px;
+        height: 500px;
         border-radius: 50%;
         z-index: -1;
         opacity: 0.4;
         top: 600px;
-        right: -50px;
+        right: 0;
         background: rgb(223, 186, 223);
-        filter: blur(100px);
+        filter: blur(120px);
     }
     .navbar {
         display: flex;
@@ -45,6 +48,7 @@ body {
     a {
         color: rgb(185, 178, 169);
         font-size: 25px;
+        text-decoration: none;
     }
     a:hover {
         color: antiquewhite;
@@ -129,9 +133,39 @@ body {
         width: fit-content;
         max-width: 100%;
     }
-    button:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);    
+    .faq {
+        grid-column: span 3;
+    }
+    .faq h2 {
+        text-align: center;
+        font-size: 50px;
+        margin: 10px;
+    }
+    .faq> p {
+        text-align: center;
+        font-size: 30px;
+        margin: 20px;
+        color: bisque;
+    }
+    .accordion {
+        margin: 20px;
+        padding: 20px;
+    }
+    .accordion summary {
+        border-bottom: 1px solid wheat;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 20px;
+        font-size: 25px;
+    }
+    .accordion-content p {
+        margin: 20px;
+        padding: 10px;
+        font-size: 25px;
+        color: rgb(232, 239, 174);
+    }
+    html {
+        scroll-behavior: smooth;
     }
     footer {
         margin-top: auto;
