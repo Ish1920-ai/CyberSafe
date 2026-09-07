@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CyberSafe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style/stylereport.css">
+    </head>
+    <body>
+        <div class="blur1"></div>
+        <div class="blur2"></div>
+        <nav class="navbar">
+            <div class="icon">
+                <h1>Cyber<span class="span">Safe</span></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="report.html">Report</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+            <header class="form">
+                <h1>Report a Cyber Incident</h1>
+                <p>Got spammed online or spotted a security threat? Let us know immediately.</p>
+            </header>
+            <main class="grid-container">
+            <form>
+                <div class="input">
+                    <label>Email Id</label><br>
+                    <input type="text" placeholder="abc123@email.com" required><br><br>
+                    <label>Category</label><br>
+                    <select required>
+                        <option value="disabled selected">Select Incident Type</option>
+                        <option value="phishing">Phishing Link / Scam</option>
+                        <option value="hack">Account Breach</option>
+                        <option value="harassment">Cyberbullying / Abuse</option>
+                        <option value="other">Other Incident</option>
+                    </select><br><br>
+                    <label>Details</label><br>
+                    <textarea rows="4" placeholder="Describe what happened or paste malicious links..." required></textarea><br><br>
+                </div>
+                <div class="button">
+                    <button type="submit">Submit Report</button>
+                </div>
+            </form>
+            </main>
+            <footer>
+                <p>&copy; CyberSafe 2026.</p>
+            </footer>
+        </div>
+    </body>
+</html>

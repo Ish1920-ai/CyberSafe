@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(13, 13, 47);
+    color: antiquewhite;
+    min-height: 100vh;
+    line-height: 1.6;
+    .blur1 {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: 0.4;
+        top: 0; 
+        left: -50px; 
+        background: aqua;
+        filter: blur(120px);
+    } 
+    .blur2 {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: 0.4;
+        top: 600px;
+        right: -50px;
+        background: rgb(223, 186, 223);
+        filter: blur(100px);
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 8%;
+    }
+    .icon {
+        font-size: larger;
+    }
+    .span {
+        color: aqua;
+    }
+    a {
+        color: rgb(185, 178, 169);
+        font-size: 25px;
+    }
+    a:hover {
+        color: antiquewhite;
+        transform: translateY(-5px);
+        font-size: 30px;
+    }
+    ul {
+        font-size: larger;
+        font-weight: bolder;
+        list-style: none;
+        display: flex;
+        gap: 15px;
+    }
+    .head {
+        font-size: larger;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .head h1{
+        margin: 20px auto;
+        padding: 10px;
+        line-height: 0.5;
+        font-size: 80px;
+    }
+    .head p {
+        margin: 10px;
+        padding: 20px;
+        font-size: 30px;
+    }
+    .gradient {
+        background: linear-gradient(135deg, aqua,rgb(215, 144, 215));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 2%;
+        padding: 2%;
+    }
+    .card {
+        grid-column: span 3,1fr;
+        border-radius: 40px;
+        border-top: 1px solid;
+        border-left: 1px solid;
+        box-sizing: border-box;
+        box-shadow: inset;
+        gap: 50px;
+        margin: 50px;
+        padding: 20px;
+    }
+    .card h2 {
+        color: rgb(224, 190, 149);
+        font-size: 40px;
+    }
+    .card p {
+        font-size: 30px;
+    }
+    .faq {
+        grid-column: span 3;
+    }
+    .faq h2 {
+        text-align: center;
+        font-size: 50px;
+        margin: 10px;
+    }
+    .faq> p {
+        text-align: center;
+        font-size: 30px;
+        margin: 20px;
+        color: bisque;
+    }
+    .accordion {
+        margin: 20px;
+        padding: 20px;
+    }
+    .accordion summary {
+        border-bottom: 1px solid wheat;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 20px;
+        font-size: 25px;
+    }
+    .accordion summary:hover {
+        transform: translateY(-5px);
+        font-size: 28px;
+    }
+    .accordion-content p {
+        margin: 20px;
+        padding: 10px;
+        font-size: 25px;
+        color: rgb(232, 239, 174);
+    }
+    footer {
+        margin-top: auto;
+        min-height: 100px;
+        width: 100%;
+        background-color: black;
+    }
+    footer p {
+        font-size: 20px;
+        margin: 30px auto;
+        text-align: center;
+        padding: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .navbar {
+        padding: 30px 5%;
+    }
+    .head h1 {
+        font-size: 55px;
+    }
+    .head p {
+        font-size: 18px;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .card {
+        width: 90%;
+        margin: 20px;
+    }
+    .faq h2 {
+        font-size: 40px;
+    }
+    .faq > p {
+        font-size: 24px;
+    }
+    .accordion-content p {
+        font-size: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+    ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+    .head h1 {
+        font-size: 40px;
+        line-height: 1;
+    }
+    .head p {
+        font-size: 16px;
+        padding: 10px;
+    }
+    .cards {
+        flex-direction: column;
+        margin: 5%;
+        padding: 0;
+    }
+    .card {
+        width: 100%;
+        margin: 10px 0;
+        padding: 15px;
+    }
+    .faq h2 {
+        font-size: 32px;
+    }
+    .faq > p {
+        font-size: 18px;
+    }
+    .accordion {
+        margin: 10px;
+        padding: 5px;
+    }
+    .accordion summary {
+        padding: 15px;
+        font-size: 16px;
+    }
+    .accordion-content p {
+        font-size: 17px;
+        margin: 10px;
+        padding: 5px;
+    }
+    p {
+        font-size: 16px;
+        margin: 10px;
+        padding: 10px;
+    }
+    footer {
+        height: auto;
+        min-height: 80px;
+    }
+    .blur1,
+    .blur2 {
+        width: 200px;
+        height: 200px;
+    }
+}

@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(13, 13, 47);
+    color: antiquewhite;
+    min-height: 100vh;
+    line-height: 1.6;
+    .blur1 {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: 0.4;
+        top: 0; 
+        left: -50px; 
+        background: aqua;
+        filter: blur(120px);
+    } 
+    .blur2 {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        z-index: -1;
+        opacity: 0.4;
+        top: 600px;
+        right: -50px;
+        background: rgb(223, 186, 223);
+        filter: blur(100px);
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 8%;
+    }
+    .icon {
+        font-size: larger;
+    }
+    .span {
+        color: aqua;
+    }
+    a {
+        color: rgb(185, 178, 169);
+        font-size: 25px;
+    }
+    a:hover {
+        color: antiquewhite;
+        transform: translateY(-5px);
+        font-size: 30px;
+    }
+    ul {
+        font-size: larger;
+        font-weight: bolder;
+        list-style: none;
+        display: flex;
+        gap: 15px;
+    }
+    .form h1 {
+        text-align: center;
+        font-size: 50px;
+        margin: 5px;
+    }
+    .form p {
+        text-align: center;
+        font-size: 25px;
+        margin: 10px;
+    }
+    .grid-container {
+        border: 1px solid snow;
+        border-radius: 50px;
+        margin: 100px auto;
+        padding: 30px;
+        max-width: 60%;
+        max-height: 50%;
+        background-color: rgba(11, 11, 25, 0.25);
+        box-shadow: 0 0 30px rgba(0, 255, 255, 0.08);
+    }
+    .input {
+        margin: 10px;
+        padding: 10px;
+    }
+    .input label {
+        font-size: 25px;
+        font-weight: bold;
+        color: rgb(234, 238, 174);
+    }
+    .input input {
+        height: 50px;
+        background-color: rgba(11, 11, 25, 0.5);
+        border: 1px solid rgba(127, 255, 255, 0.3);
+        border-radius: 20px;
+        width: 90%;
+        color: antiquewhite;
+        padding: 20px;
+        font-size: 15px;
+    }
+    .input select {
+        height: 45px;
+        background-color: rgba(11, 11, 25, 0.5);
+        border: 1px solid rgba(127, 255, 255, 0.3);
+        border-radius: 20px;
+        width: 90%;
+        color: antiquewhite;
+        padding: 5px;
+        font-size: 15px;
+    }
+    .input textarea {
+        background-color: rgba(11, 11, 25, 0.5);
+        width: 90%;
+        border-radius: 20px;
+        border: 1px solid rgba(127, 255, 255, 0.3);
+        color: antiquewhite;
+        font-size: 15px;
+        padding: 10px;
+    }
+    button {
+        background: linear-gradient(135deg, aqua, lavender);
+        -webkit-background-clip: border-box;
+        color: rgb(26, 25, 23);
+        border-radius: 20px;
+        height: 50px;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 20px auto;
+        display: block;
+        cursor: pointer;
+        width: fit-content;
+        max-width: 100%;
+    }
+    button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);    
+    }
+    footer {
+        margin-top: auto;
+        min-height: 150px;
+        width: 100%;
+        background-color: black;
+    }
+    footer p {
+        font-size: 20px;
+        margin: 30px auto;
+        text-align: center;
+        padding: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .navbar {
+        padding: 25px 5%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    ul {
+        padding: 0;
+        gap: 10px;
+        font-size: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    a:hover {
+        font-size: inherit;
+    }
+    .form h1 {
+        font-size: 38px;
+    }
+    .form p {
+        font-size: 20px;
+    }
+    .grid-container {
+        margin: 50px 5%;
+        padding: 20px;
+        width: auto;
+    }
+    .input label {
+        font-size: 18px;
+    }
+    button {
+        font-size: 18px;
+        margin: 15px auto;
+        width: fit-content;
+    }
+    footer {
+        height: auto;
+    }
+    footer p {
+        margin: 10px;
+        padding: 15px;
+        font-size: 16px;
+    }
+    .blur1,
+    .blur2 {
+        width: 200px;
+        height: 200px;
+    }
+    .blur2 {
+        top: 500px;
+    }
+}
+@media (max-width: 480px) {
+    .navbar {
+        padding: 20px 4%;
+    }
+    ul {
+        font-size: 14px;
+        gap: 8px;
+    }
+    .form h1 {
+        font-size: 30px;
+    }
+    .form p {
+        font-size: 17px;
+    }
+    .grid-container {
+        margin: 30px 4%;
+        padding: 15px;
+        border-radius: 15px;
+    }
+    .input input,
+    .input select {
+        height: 40px;
+        font-size: 14px;
+    }
+    .input textarea {
+        font-size: 14px;
+    }
+    button {
+        font-size: 16px;
+        margin: 10px auto;
+        padding: 8px 15px;
+        width: fit-content;
+    }
+    footer p {
+        font-size: 14px;
+    }
+}
