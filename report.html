@@ -10,10 +10,11 @@
         <div class="blur2"></div>
         <nav class="navbar">
             <div class="icon">
-                <h1>Cyber<span class="span">Safe</span></h1>
+                <h1>Cyber<span class="span">Safe</span>.</h1>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
+                <li><a href="#faq">FAQs</a></li>
                 <li><a href="report.html">Report</a></li>
                 <li><a href="contact.html">Contact us</a></li>
             </ul>
@@ -22,26 +23,53 @@
                 <h1>Report a Cyber Incident</h1>
                 <p>Got spammed online or spotted a security threat? Let us know immediately.</p>
             </header>
-            <main class="grid-container">
-            <form>
-                <div class="input">
-                    <label>Email Id</label><br>
-                    <input type="text" placeholder="abc123@email.com" required><br><br>
-                    <label>Category</label><br>
-                    <select required>
-                        <option value="disabled selected">Select Incident Type</option>
-                        <option value="phishing">Phishing Link / Scam</option>
-                        <option value="hack">Account Breach</option>
-                        <option value="harassment">Cyberbullying / Abuse</option>
-                        <option value="other">Other Incident</option>
-                    </select><br><br>
-                    <label>Details</label><br>
-                    <textarea rows="4" placeholder="Describe what happened or paste malicious links..." required></textarea><br><br>
+            <main>
+                <div class="grid-container">
+                    <form>
+                        <div class="input">
+                            <label>Email Id</label><br>
+                            <input type="text" placeholder="abc123@email.com" required><br><br>
+                            <label>Category</label><br>
+                            <select required>
+                                <option value="disabled selected">Select Incident Type</option>
+                                <option value="phishing">Phishing Link / Scam</option>
+                                <option value="hack">Account Breach</option>
+                                <option value="harassment">Cyberbullying / Abuse</option>
+                                <option value="other">Other Incident</option>
+                            </select><br><br>
+                            <label>Details</label><br>
+                            <textarea rows="4" placeholder="Describe what happened or paste malicious links..." required></textarea><br><br>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Submit Report</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="button">
-                    <button type="submit">Submit Report</button>
+                <div class="faq" id="faq">
+                    <h2>Frequently Asked Questions (FAQs)</h2>
+                    <p>Get to know everything that can help you stay safe online</p>
+                    <div class="accordion">
+                        <details>
+                            <summary>What should I do first if I get hacked?</summary>
+                            <div class="accordion-content">
+                                <p>Immediately change password on affected accounts, enable Two-Factor Authentication (2FA), and disconnect compromised devices 
+                                from Wi-Fi.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>Is CyberSafe completely free to use?</summary>
+                            <div class="accordion-content">
+                                <p>Yes, our basic breach monitoring and scam reporting tools are 100% free for everyone.</p>
+                            </div>
+                        </details>
+                        <details>
+                            <summary>How do I spot a phishing email or message?</summary>
+                            <div class="accordion-content">
+                                <p>Check the sender's actual email address, look for urgent demand language, and never click links promising instant money or unexpected packages.</p>
+                            </div>
+                        </details>
+                    </div>
                 </div>
-            </form>
             </main>
             <footer>
                 <p>&copy; CyberSafe 2026.</p>
