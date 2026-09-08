@@ -262,121 +262,34 @@ body {
     }
 }
 @media (max-width: 768px) {
-    .navbar {
-        padding: 30px 5%;
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-    ul {
-        padding: 0;
-        gap: 10px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .contact-grid {
-        display: flex;
-        flex-direction: column;
-    }
-    .contact-info {
-        margin: 20px auto;
-        padding: 20px;
-        width: 90%;
-    }
-    .contact-info h2 {
-        font-size: 40px;
-    }
-    .contact-info p {
-        font-size: 22px;
-    }
-    .contact-form {
-        width: 90%;
-        margin: 20px auto;
-        padding: 25px;
-    }
-    .contact-form h2 {
-        font-size: 28px;
-    }
-    .contact-form label {
-        font-size: 20px;
-    }
-    .contact-form input,
-    .contact-form textarea {
-        width: 100%;
-    }
-    footer {
-        position: static;
-        height: auto;
-        margin-top: 30px;
-        padding: 10px;
-    }
-    footer p {
-        font-size: 17px;
-        margin: 15px auto;
+    body {
+        .blur1 {
+            width: 200px;
+            height: 200px;
+        } 
+        .blur2 {
+            width: 300px;
+            height: 300px;
+        }
+        .navbar {
+            display: flex;
+            flex-direction: column;
+        }
+        .theme {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
     }
 }
-@media (max-width: 480px) {
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px;
-    }
-    ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 8px;
-        padding: 0;
-    }
-    .contact-grid {
-        display: flex;
-        flex-direction: column;
-    }
-    .contact-info {
-        width: 100%;
-        padding: 15px;
-        margin: 15px auto;
-    }
-    .contact-info h2 {
-        font-size: 32px;
-    }
-    .contact-info p {
-        font-size: 18px;
-    }
-    .contact-form {
-        width: 92%;
-        padding: 20px;
-        margin: 15px auto;
-        border-radius: 25px;
-    }
-    .contact-form h2 {
-        font-size: 24px;
-    }
-    .contact-form label {
-        font-size: 18px;
-    }
-    .contact-form input,
-    .contact-form textarea {
-        width: 100%;
-        font-size: 16px;
-    }
-    .contact-form input {
-        height: 40px;
-        padding: 10px;
-    }
-    .contact-form textarea {
-        height: 100px;
-        padding: 10px;
-    }
-    .contact-form button {
-        font-size: 17px;
-        padding: 10px 20px;
-        width: fit-content;
-    }
-    footer p {
-        font-size: 14px;
-    }
-    .blur1,
-    .blur2 {
-        width: 200px;
-        height: 200px;
+@media (max-width: 440px) {
+    body {
+        .navbar a {
+            font-size: 20px;
+        }
+        .contact-grid {
+            display: flex;
+            flex-direction: column;
+        }
     }
 }

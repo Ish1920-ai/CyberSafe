@@ -75,7 +75,6 @@ body {
     background-color: rgb(13, 13, 47);
     color: antiquewhite;
     min-height: 100vh;
-    line-height: 1.6;
     .blur1 {
         position: absolute;
         width: 500px;
@@ -145,15 +144,13 @@ body {
             font-weight: bold;
         }
     .head {
-        font-size: larger;
-        font-weight: bolder;
         text-align: center;
     }
     .head h1{
         margin: 20px auto;
         padding: 10px;
-        line-height: 0.5;
         font-size: 80px;
+        line-height: 0.8;
     }
     .head p {
         margin: 30px;
@@ -235,92 +232,39 @@ body {
     }
 }
 @media (max-width: 768px) {
-    .navbar {
-        padding: 30px 5%;
-    }
-    .head h1 {
-        font-size: 55px;
-    }
-    .head p {
-        font-size: 18px;
-    }
-    .cards {
-        flex-direction: column;
-    }
-    .card {
-        width: 90%;
-        margin: 20px;
-    }
-    .faq h2 {
-        font-size: 40px;
-    }
-    .faq > p {
-        font-size: 24px;
-    }
-    .accordion-content p {
-        font-size: 20px;
+    body {
+        .blur1 {
+            width: 200px;
+            height: 200px;
+        } 
+        .blur2 {
+            width: 300px;
+            height: 300px;
+        }
+        .navbar {
+            display: flex;
+            flex-direction: column;
+        }
+        .theme {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+        }
+        .cards {
+            display: flex;
+            flex-direction: column;
+        }
+        .card {
+            margin: 50px;
+            padding: 20px;
+        }
     }
 }
-@media (max-width: 480px) {
-    .navbar {
-        flex-direction: column;
-        gap: 15px;
-        padding: 20px;
+@media (max-width: 440px) {
+    .navbar a {
+        font-size: 20px;
     }
-    ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 8px;
-    }
-    .head h1 {
-        font-size: 40px;
-        line-height: 1;
-    }
-    .head p {
-        font-size: 16px;
-        padding: 10px;
-    }
-    .cards {
-        flex-direction: column;
-        margin: 5%;
-        padding: 0;
-    }
-    .card {
-        width: 100%;
-        margin: 10px 0;
-        padding: 15px;
-    }
-    .faq h2 {
-        font-size: 32px;
-    }
-    .faq > p {
-        font-size: 18px;
-    }
-    .accordion {
-        margin: 10px;
-        padding: 5px;
-    }
-    .accordion summary {
-        padding: 15px;
-        font-size: 16px;
-    }
-    .accordion-content p {
-        font-size: 17px;
-        margin: 10px;
-        padding: 5px;
-    }
-    p {
-        font-size: 16px;
-        margin: 10px;
-        padding: 10px;
-    }
-    footer {
-        height: auto;
-        min-height: 80px;
-    }
-    .blur1,
-    .blur2 {
-        width: 200px;
-        height: 200px;
+    .gradient {
+        font-size: 70px;
     }
 }
