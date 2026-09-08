@@ -4,6 +4,75 @@
 html {
         scroll-behavior: smooth;
     }
+body:has(.theme input:checked) {
+        background-color: rgb(171, 200, 212);
+        .blur1 {
+            background: rgb(20, 16, 57);
+        }
+        .blur2 {
+            background: rgb(68, 28, 78);
+        }
+        .navbar a {
+            color: rgb(43, 88, 49);
+        }
+        a:hover {
+            color: rgb(14, 34, 16);
+        }
+        .icon {
+            color: rgb(33, 31, 73);
+        }
+        .icon span {
+            color: aquamarine;
+        }
+        .login button {
+            color: rgb(17, 42, 21);
+            background: linear-gradient(135deg, rgb(20, 16, 57), rgb(0, 255, 255));
+        }
+        .theme {
+            color: rgb(20, 16, 57);
+        }
+        .grid-container {
+            border: 5px solid rgb(83, 36, 92);
+            border-radius: 40px;
+            background-color: rgb(171, 200, 212);
+        }
+        .form h1 {
+            color: rgb(20, 16, 57);
+        }
+        .form p {
+            color: rgb(43, 88, 49);
+            font-weight: bold;
+        }
+        .input label {
+            color: rgb(43, 88, 49);
+        }
+        .input input,
+        .input select,
+        .input textarea {
+            color: rgb(43, 88, 49);
+            background-color: rgb(159, 185, 196);
+        }
+        button {
+            color: rgb(17, 42, 21);
+            background: linear-gradient(135deg, rgb(20, 16, 57), rgb(177, 160, 194));
+        }
+        .faq h2 {
+            color: rgb(43, 28, 65);
+        }
+        .faq > p {
+            font-weight: bold;
+            color: rgb(63, 109, 129);
+        }
+        .accordion summary {
+            border-bottom: 5px solid rgb(38, 15, 43);
+            color: rgb(30, 65, 28);
+            font-weight: bold;
+        }
+        .accordion-content p {
+            color: rgb(52, 116, 60);
+            font-weight: bold;
+        }  
+    } 
 body {
     background-color: rgb(13, 13, 47);
     color: antiquewhite;
@@ -73,6 +142,11 @@ body {
         background-clip: border-box;
         cursor: pointer;
     }
+    .theme {
+            color: rgb(191, 192, 159);
+            font-size: 20px;
+            font-weight: bold;
+    }
     .form h1 {
         text-align: center;
         font-size: 50px;
@@ -135,6 +209,7 @@ body {
         background: linear-gradient(135deg, aqua, lavender);
         background-clip: border-box;
         color: rgb(26, 25, 23);
+        border: none;
         border-radius: 20px;
         height: 50px;
         padding: 10px;

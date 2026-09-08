@@ -4,6 +4,73 @@
 html {
         scroll-behavior: smooth;
 }
+body:has(.theme input:checked) {
+        background-color: rgb(171, 200, 212);
+        .blur1 {
+            background: rgb(20, 16, 57);
+        }
+        .blur2 {
+            background: rgb(68, 28, 78);
+        }
+        .navbar a {
+            color: rgb(43, 88, 49);
+        }
+        a:hover {
+            color: rgb(14, 34, 16);
+        }
+        .icon {
+            color: rgb(33, 31, 73);
+        }
+        .icon span {
+            color: aquamarine;
+        }
+        .login button {
+            color: rgb(17, 42, 21);
+            background: linear-gradient(135deg, rgb(20, 16, 57), rgb(0, 255, 255));
+        }
+        .theme {
+            color: rgb(20, 16, 57);
+        }
+        .head h1 {
+            color: rgb(20, 16, 57);
+        }
+        .gradient {
+            background: linear-gradient(135deg, rgb(18, 22, 52), aqua);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .head p {
+            color: rgb(76, 77, 34);
+        }
+        .card {
+            border-top: 5px solid rgb(83, 36, 92);
+            border-left: 5px solid rgb(83, 36, 92);
+            border-radius: 40px;
+        }
+        .card h2 {
+            color: rgb(88, 43, 105);
+        }
+        .card p {
+            font-weight: bold;
+            color: rgb(43, 88, 49);
+        }
+        .faq h2 {
+            color: rgb(43, 28, 65);
+        }
+        .faq > p {
+            font-weight: bold;
+            color: rgb(63, 109, 129);
+        }
+        .accordion summary {
+            border-bottom: 5px solid rgb(38, 15, 43);
+            color: rgb(30, 65, 28);
+            font-weight: bold;
+        }
+        .accordion-content p {
+            color: rgb(52, 116, 60);
+            font-weight: bold;
+        }  
+    } 
 body {
     background-color: rgb(13, 13, 47);
     color: antiquewhite;
@@ -72,6 +139,11 @@ body {
         background-clip: border-box;
         cursor: pointer;
     }
+    .theme {
+            color: rgb(191, 192, 159);
+            font-size: 20px;
+            font-weight: bold;
+        }
     .head {
         font-size: larger;
         font-weight: bolder;
