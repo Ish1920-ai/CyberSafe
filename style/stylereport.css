@@ -296,3 +296,10 @@ body {
         }
     }
 }
+@media (max-width: 360px) {
+    body {
+         .navbar a {
+            font-size: 15px;
+        }
+    }
+}

@@ -261,7 +261,7 @@ body {
         text-align: center;
     }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     body {
         .blur1 {
             width: 200px;
@@ -282,7 +282,7 @@ body {
         }
     }
 }
-@media (max-width: 440px) {
+@media screen and (max-width: 440px) {
     body {
         .navbar a {
             font-size: 20px;
@@ -292,4 +292,16 @@ body {
             flex-direction: column;
         }
     }
+}
+@media screen and (max-width: 360px) {
+    body {
+        .contact-form input,
+        .contact-form textarea {
+            width: 80%;
+        }
+        .navbar a {
+            font-size: 15px;
+        }
+    }
+    
 }

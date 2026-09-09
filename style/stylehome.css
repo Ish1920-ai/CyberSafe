@@ -231,7 +231,7 @@ body {
         padding: 30px;
     }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     body {
         .blur1 {
             width: 200px;
@@ -260,7 +260,7 @@ body {
         }
     }
 }
-@media (max-width: 440px) {
+@media screen and (max-width: 440px) {
     body {
         .navbar a {
         font-size: 20px;
@@ -273,6 +273,19 @@ body {
         }
         .gradient {
         font-size: 70px;
+        }
+    }
+}
+@media screen and (max-width: 360px) {
+    body {
+        .navbar a {
+            font-size: 15px;
+        }
+        .head h1 {
+            font-size: 60px;
+        }
+        .gradient {
+            font-size: 60px;
         }
     }
 }
