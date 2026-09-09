@@ -261,10 +261,18 @@ body {
     }
 }
 @media (max-width: 440px) {
-    .navbar a {
+    body {
+        .navbar a {
         font-size: 20px;
-    }
-    .gradient {
+        }
+        .head h1 {
+            text-align: center;
+        }
+        .head p {
+            text-align: center;
+        }
+        .gradient {
         font-size: 70px;
+        }
     }
 }
